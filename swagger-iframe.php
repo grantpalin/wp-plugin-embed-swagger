@@ -8,7 +8,6 @@ $url = filter_var($url, FILTER_VALIDATE_URL);
 		<meta charset="UTF-8">
 		<title>Swagger</title>
 		<link rel="stylesheet" href="./public/swagger-ui.css" />
-		<script src="./public/swagger-ui.js"></script>
 	</head>
 	<body>
 		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
@@ -40,7 +39,6 @@ $url = filter_var($url, FILTER_VALIDATE_URL);
 				<symbol viewBox="0 0 24 24" id="expand">
 					<path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
 				</symbol>
-
 			</defs>
 		</svg>
 
@@ -54,6 +52,7 @@ $url = filter_var($url, FILTER_VALIDATE_URL);
 				const ui = SwaggerUIBundle({
 					url: "<?php echo $url ?>",
 					dom_id: '#swagger-ui',
+					deepLinking: true,
 					presets: [
 						SwaggerUIBundle.presets.apis,
 						SwaggerUIStandalonePreset
