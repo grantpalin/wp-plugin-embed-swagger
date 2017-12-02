@@ -66,6 +66,6 @@ $url = filter_var($url, FILTER_VALIDATE_URL);
 				window.ui = ui;
 			}
 		</script>
-		<script src="./public/iframeResizer.contentWindow.min.js"></script>
+		<script src="./public/iframeResizer.contentWindow.min.js" defer></script>
 	</body>
 </html>

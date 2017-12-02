@@ -35,7 +35,7 @@ class WP_Swagger {
 
 		$baseUrl = plugins_url( '', __DIR__ );
 
-		wp_enqueue_script( 'iframeResizer', $baseUrl . '/public/iframeResizer.min.js', array(), '2.8.6', true );
+		wp_enqueue_script( 'iframeResizer', $baseUrl . '/public/iframeResizer.min.js', array(), '3.5.12', true );
 		wp_enqueue_script( 'wp-swagger', $baseUrl . '/public/wp-swagger.js', array( 'iframeResizer', 'jquery' ), '1.0.0' );
 		wp_enqueue_style( 'wp-swagger', $baseUrl . '/public/wp-swagger.css', array(), '1.0.0' );
 
