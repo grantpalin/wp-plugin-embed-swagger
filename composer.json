@@ -15,5 +15,22 @@
   "require": {
     "php": ">= 5.6",
     "composer/installers": "v1.4.0"
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "0.14.0"
+  },
+  "scripts": {
+    "phpcs-standards-config": [
+      "phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs"
+    ],
+    "post-install-cmd": [
+      "@phpcs-standards-config"
+    ],
+    "post-update-cmd": [
+      "@phpcs-standards-config"
+    ],
+    "sniff": [
+      "phpcs --standard=phpcs.xml . --ignore=vendor"
+    ]
   }
 }

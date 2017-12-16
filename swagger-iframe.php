@@ -1,6 +1,12 @@
 <?php
+/**
+ * Acts as the page within the iframe, loads the scripts and styles from Swagger UI and loads the given spec file.
+ *
+ * @package WP_Swagger
+ */
+
 $url = $_GET['url'];
-$url = filter_var($url, FILTER_VALIDATE_URL);
+$url = filter_var( $url, FILTER_VALIDATE_URL );
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +56,7 @@ $url = filter_var($url, FILTER_VALIDATE_URL);
 			window.onload = function() {
 				// Build a system
 				const ui = SwaggerUIBundle({
-					url: "<?php echo $url ?>",
+					url: "<?php echo $url; ?>",
 					dom_id: '#swagger-ui',
 					deepLinking: true,
 					presets: [

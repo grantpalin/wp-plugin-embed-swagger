@@ -1,4 +1,10 @@
 <?php
+/**
+ * Contains the plugin's entry point.
+ *
+ * @package WP_Swagger
+ */
+
 /*
  * Plugin Name: WP Swagger
  * Plugin URI:  https://grantpalin.com
@@ -12,7 +18,10 @@
 
 require_once __DIR__ . '/inc/class-wp-swagger.php';
 
+/**
+ * Initializes the plugin.
+ */
 function wp_swagger_init() {
 	WP_Swagger::get_instance();
 }
-add_action('init', 'wp_swagger_init');
+add_action( 'init', 'wp_swagger_init' );

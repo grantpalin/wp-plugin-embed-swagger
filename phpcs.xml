@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset>
+    <!-- scan only PHP files -->
+    <arg name="extensions" value="php"/>
+
+    <!-- show colors in console -->
+    <arg value="-colors"/>
+
+    <!-- show progress -->
+    <arg value="p"/>
+
+    <!-- use WordPress coding standards -->
+    <rule ref="wordpress" />
+</ruleset>
