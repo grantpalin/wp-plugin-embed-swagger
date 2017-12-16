@@ -1,0 +1,19 @@
+{
+  "name": "grantpalin/wpswagger",
+  "description": "WordPress shortcode for embedding Swagger specs",
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "license": "GPL-3.0",
+  "type": "wordpress-plugin",
+  "keywords": ["wordpress", "plugin", "content", "shortcode"],
+  "authors": [
+    {
+      "name": "Grant Palin",
+      "homepage": "https://grantpalin.com"
+    }
+  ],
+  "require": {
+    "php": ">= 5.6",
+    "composer/installers": "v1.4.0"
+  }
+}
