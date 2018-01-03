@@ -2,5 +2,5 @@
 /**
  * Placeholder file to prevent directory browsing.
  *
- * @package WP_Swagger
+ * @package Swagger_Embed
  */
