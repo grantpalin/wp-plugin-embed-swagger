@@ -1,11 +1,10 @@
-=== Swagger Embed ===
+=== Embed Swagger ===
 Contributors: grantpalin
 Tags: shortcode, embed, swagger
 Requires at least: 4.6
 Tested up to: 4.9.4
 Requires PHP: 5.2.4
 Stable tag: trunk
-Requires PHP: 5.2.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -23,9 +22,9 @@ Example shortcode usage:
 
 An absolute URL must be provided within the quotes. The URL must point to a valid Swagger spec file, typically ending with `.json`.
 
-Custom styles can be applied to the iframe by adding rules to `swagger-embed-container`, e.g.:
+Custom styles can be applied to the iframe by adding rules to `embed-swagger-container`, e.g.:
 
-    .swagger-embed-container {
+    .embed-swagger-container {
         /* custom styles here */
     }
 
@@ -33,7 +32,7 @@ An included script forces the iframe to be as high as needed to show all the con
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/swagger-embed` directory, or install the plugin through the WordPress plugins screen directly (search for "Swagger Embed").
+1. Upload the plugin files to the `/wp-content/plugins/embed-swagger` directory, or install the plugin through the WordPress plugins screen directly (search for "Embed Swagger").
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Screenshots ==
