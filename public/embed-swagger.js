@@ -2,5 +2,5 @@
  * Initialize the iframeResizer functionality.
  */
 (function($) {
-	$('.swagger-embed-container').iFrameResize();
+	$('.embed-swagger-container').iFrameResize();
 })(jQuery);

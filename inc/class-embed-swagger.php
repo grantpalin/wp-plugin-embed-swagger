@@ -75,7 +75,7 @@ if ( ! class_exists( 'Embed_Swagger' ) ) {
 			?>
 			<iframe
 				src="<?php echo esc_url( $base_url . '/swagger-iframe.php' ); ?>?url=<?php echo rawurlencode( $args['url'] ); ?>"
-				class="swagger-embed-container" width="100%"></iframe>
+				class="embed-swagger-container" width="100%"></iframe>
 			<?php
 			return ob_get_clean();
 		}
