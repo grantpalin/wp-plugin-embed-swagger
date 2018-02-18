@@ -2,7 +2,7 @@
 /**
  * Acts as the page within the iframe, loads the scripts and styles from Swagger UI and loads the given spec file.
  *
- * @package Swagger_Embed
+ * @package Embed_Swagger
  */
 
 $url = $_GET['url'];

@@ -1,5 +1,5 @@
 {
-  "name": "grantpalin/swaggerembed",
+  "name": "grantpalin/embedswagger",
   "description": "WordPress shortcode for embedding Swagger specs",
   "version": "1.0.0",
   "minimum-stability": "stable",

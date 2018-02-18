@@ -1,24 +1,24 @@
 <?php
 /**
- * Contains the Swagger_Embed class, the centre of the plugin.
+ * Contains the Embed_Swagger class, the centre of the plugin.
  *
- * @package Swagger_Embed
+ * @package Embed_Swagger
  */
 
-if ( ! class_exists( 'Swagger_Embed' ) ) {
+if ( ! class_exists( 'Embed_Swagger' ) ) {
 	/**
-	 * The Swagger_Embed class contains the plugin's core functionality.
+	 * The Embed_Swagger class contains the plugin's core functionality.
 	 */
-	class Swagger_Embed {
+	class Embed_Swagger {
 		/**
 		 * The class' sole instance.
 		 *
-		 * @var Swagger_Embed
+		 * @var Embed_Swagger
 		 */
 		protected static $instance;
 
 		/**
-		 * Swagger_Embed constructor.
+		 * Embed_Swagger constructor.
 		 */
 		protected function __construct() {
 			add_shortcode( 'swagger', array( $this, 'shortcode' ) );
@@ -27,7 +27,7 @@ if ( ! class_exists( 'Swagger_Embed' ) ) {
 		/**
 		 * Provides access to the class' sole instance.
 		 *
-		 * @return Swagger_Embed
+		 * @return Embed_Swagger
 		 */
 		public static function get_instance() {
 			if ( null === self::$instance ) {
@@ -66,8 +66,8 @@ if ( ! class_exists( 'Swagger_Embed' ) ) {
 			$base_url = plugins_url( '', __DIR__ );
 
 			wp_enqueue_script( 'iframeResizer', $base_url . '/public/iframeResizer.min.js', array(), '3.5.12', true );
-			wp_enqueue_script( 'swagger-embed', $base_url . '/public/swagger-embed.js', array( 'iframeResizer', 'jquery' ), '1.0.0' );
-			wp_enqueue_style( 'swagger-embed', $base_url . '/public/swagger-embed.css', array(), '1.0.0' );
+			wp_enqueue_script( 'embed-swagger', $base_url . '/public/embed-swagger.js', array( 'iframeResizer', 'jquery' ), '1.0.0' );
+			wp_enqueue_style( 'embed-swagger', $base_url . '/public/embed-swagger.css', array(), '1.0.0' );
 
 			$args['url'] = filter_var( $args['url'], FILTER_VALIDATE_URL );
 

@@ -2,12 +2,11 @@
 /**
  * Contains the plugin's entry point.
  *
- * @package Swagger_Embed
+ * @package Embed_Swagger
  */
 
 /*
- * Plugin Name: Swagger Embed
- * Plugin URI:  https://grantpalin.com
+ * Plugin Name: Embed Swagger
  * Description: Provides a shortcode for embedding Swagger specs into pages or posts.
  * Version:     1.0.0
  * Author:      Grant Palin
@@ -17,28 +16,28 @@
  * Text Domain: swagger-embed
  * Domain Path: /languages
  *
- * Swagger Embed is free software: you can redistribute it and/or modify
+ * Embed Swagger is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
  * any later version.
  *
  *
- * Swagger Embed is distributed in the hope that it will be useful,
+ * Embed Swagger is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Swagger Embed. If not, see
+ * along with Embed Swagger. If not, see
  * http://www.gnu.org/licenses/gpl-3.0.txt.
  */
 
-require_once __DIR__ . '/inc/class-swagger-embed.php';
+require_once __DIR__ . '/inc/class-embed-swagger.php';
 
 /**
  * Initializes the plugin.
  */
-function swagger_embed_init() {
-	Swagger_Embed::get_instance();
+function embed_swagger_init() {
+	Embed_Swagger::get_instance();
 }
-add_action( 'init', 'swagger_embed_init' );
+add_action( 'init', 'embed_swagger_init' );
